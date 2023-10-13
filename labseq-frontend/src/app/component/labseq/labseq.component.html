@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="center">
+    <h1>LabSeq</h1>
+
+    <div class="mb-3">
+      <label for="n" class="form-label">Enter a number:</label>
+      <input [(ngModel)]="n" id="n" type="number" class="form-control">
+    </div>
+
+    <div *ngIf="failed" class="p-2 alert alert-danger" role="alert">
+      Field Number must be a positive value.
+    </div>
+
+    <button (click)="onSubmit()" class="btn btn-primary">Submit</button>
+
+    <div *ngIf="result !== undefined" class="pt-4">
+      <p class="fw-bold font-monospace">Result: {{ result }}</p>
+    </div>
+
+  </div>
+</div>

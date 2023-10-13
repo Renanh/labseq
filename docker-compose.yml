@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  backend:
+    container_name: labseq-service
+    build:
+      context: ./labseq-service/
+      args:
+        PROJECT_NAME: labseq-service
+        APP_VERSION: 1.0.0-SNAPSHOT
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+  frontend:
+    container_name: labseq-frontend
+    build:
+      context: ./labseq-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"

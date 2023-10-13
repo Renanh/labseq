@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "3f03fd68-d58d-4aa7-a9bb-156566da33a2",
+		"name": "labseq",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3883121",
+		"_collection_link": "https://planetary-equinox-304070.postman.co/workspace/TIM~76a77316-87ed-4428-960c-5e781017bde4/collection/3883121-3f03fd68-d58d-4aa7-a9bb-156566da33a2?action=share&source=collection_link&creator=3883121"
+	},
+	"item": [
+		{
+			"name": "getValue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/labseq/:n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"labseq",
+						":n"
+					],
+					"variable": [
+						{
+							"key": "n",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "liveness",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/labseq/actuator/health/liveness",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"labseq",
+						"actuator",
+						"health",
+						"liveness"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
