@@ -51,7 +51,7 @@ $ npm start
 ```
 ### 5.1. Bookmarks
 - Link to the [Web Application](http://localhost:4200/)
-- Link to the [API Documentation](http://localhost:8080/swagger-ui/index.html#/)
+- Link to the [API Documentation](http://localhost:8080/api/v1/labseq/swagger-ui/index.html)
 
 
 ## Copyright
